@@ -1,8 +1,10 @@
 # Editorium
 
-Editorium is a Codex skill that completes a message template using an **edital** and any supplied annexes or *retificações*. It preserves the template's language and structure, checks official updates for time-sensitive details, and flags information that the documents do not confirm.
+Editorium completes a message template using an **edital** and any supplied annexes or *retificações*. It preserves the template's language and structure, checks official updates for time-sensitive details, and flags information that the documents do not confirm.
 
-## Install in Codex
+**Share this repository link for both Codex and custom GPTs.** The workflow is the same; each product has its own setup step below. There is no single install command that works in both.
+
+## If you use Codex
 
 Paste this command into a Codex chat:
 
@@ -12,9 +14,9 @@ $skill-installer Install Editorium from https://github.com/MVFalcao/editorium-sk
 
 Then send your edital and template and ask: `$editorium Complete this message from the attached edital.` If the skill does not appear immediately, restart Codex.
 
-## Use in an existing custom GPT
+## If you edit your own custom GPT
 
-An existing custom GPT cannot run the Codex skill installer. Open [GPT_INSTRUCTIONS.md](GPT_INSTRUCTIONS.md), copy its contents into your GPT's **Instructions**, and enable web search if you want it to check official updates. This file contains the same workflow as the skill, without the skill metadata. A GitHub link or file in the GPT's Knowledge does not install the skill.
+Open [GPT_INSTRUCTIONS.md](GPT_INSTRUCTIONS.md), copy its contents into your GPT's **Instructions**, and save the GPT. Enable web search if you want it to check official updates. This file mirrors the [Codex skill](skills/editorium/SKILL.md) without skill metadata. The Codex install command does not work in a custom GPT's chat or editor.
 
 ## Use
 
